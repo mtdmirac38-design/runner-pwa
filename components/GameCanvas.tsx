@@ -20,6 +20,8 @@ import PauseMenu from './ui/PauseMenu';
 import Controls from './ui/Controls';
 import SettingsModal from './ui/SettingsModal';
 import { useOffline } from '../hooks/useOffline';
+import InstallButton from './ui/InstallButton'; 
+
 const GameCanvas: React.FC = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const requestRef = useRef<number>(0);
@@ -131,6 +133,7 @@ const GameCanvas: React.FC = () => {
   const generateLevel = (startX: number) => {
     let currentX = startX;
     const generateCount = 5;
+          const height = dimensions.height - (100 + Math.random() * 300); 
     for (let i = 0; i < generateCount; i++) {
       const gap = 100 + Math.random() * 100;
       const width = 150 + Math.random() * 200;
@@ -325,6 +328,8 @@ const GameCanvas: React.FC = () => {
     ctx.fillRect(p.pos.x + 22, p.pos.y + 28, 12, 4);
     ctx.globalAlpha = 1;
     ctx.restore();
+      }, [dimensions]); 
+
   const tick = useCallback((timestamp: number) => {
     const deltaTime = lastTimeRef.current ? (timestamp - lastTimeRef.current) / 1000 : 0.016;
     lastTimeRef.current = timestamp;
