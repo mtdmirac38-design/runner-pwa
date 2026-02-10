@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="theme-color" content="#1e293b" />
+    <meta name="description" content="A high-performance PWA Platformer Game" />
+    <title>SkyRunner PWA</title>
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="apple-touch-icon" href="https://picsum.photos/192/192" />
+    <style>
+      /* Prevent pull-to-refresh on mobile */
+      body {
+        overscroll-behavior-y: contain;
+        touch-action: none;
+        user-select: none;
+        -webkit-user-select: none;
+      }
+    </style>
+  </head>
+  <body class="bg-slate-900 text-white overflow-hidden">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

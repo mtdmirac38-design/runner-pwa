@@ -1,0 +1,15 @@
+export const GRAVITY = 0.6;
+export const FRICTION = 0.8;
+export const MOVE_SPEED = 6;
+export const JUMP_FORCE = -14;
+export const WORLD_SPEED_BASE = 4;
+export const CANVAS_WIDTH = 800;
+export const CANVAS_HEIGHT = 600;
+export const PLAYER_SIZE = { width: 40, height: 40 };
+export const PLATFORM_MIN_WIDTH = 100;
+export const PLATFORM_MAX_WIDTH = 300;
+export const PLATFORM_HEIGHT = 20;
+export const COLOR_PLAYER = '#3b82f6'; 
+export const COLOR_PLATFORM = '#64748b'; 
+export const COLOR_OBSTACLE = '#ef4444'; 
+export const COLOR_GROUND = '#1e293b';

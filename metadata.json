@@ -1,0 +1,5 @@
+{
+  "name": "SkyRunner PWA",
+  "description": "A progressive web app platformer game. Installable, offline-capable, and mobile-optimized.",
+  "requestFramePermissions": []
+}
